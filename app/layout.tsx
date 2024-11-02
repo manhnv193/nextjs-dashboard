@@ -1,3 +1,7 @@
+import '@/app/ui/global.css'
+import { inter} from '@/app/ui/fonts'
+
+// Định nghĩa một layout chung cho tất cả các trang con trong thư mục
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +9,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   );
 }
